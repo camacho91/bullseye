@@ -69,6 +69,9 @@
                                 <rect key="frame" x="115" y="324" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="btnRestartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwD-6R-WtQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjh-Kf-rH9">
                                 <rect key="frame" x="215" y="328" width="50" height="21"/>
@@ -92,6 +95,8 @@
                         <outlet property="btnGo" destination="mAt-ll-58r" id="mk1-6w-cfL"/>
                         <outlet property="lblTarget" destination="mOX-Kq-ZcZ" id="F3x-c6-yTE"/>
                         <outlet property="sliderMain" destination="78y-Xo-eNB" id="T8k-ny-ACC"/>
+                        <outlet property="txtRounds" destination="aWz-uY-Ati" id="jxQ-0j-2gz"/>
+                        <outlet property="txtScore" destination="Ubo-kV-b7N" id="bxT-0K-O0q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
