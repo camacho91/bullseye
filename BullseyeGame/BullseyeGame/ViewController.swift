@@ -25,6 +25,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startNewGame()
+        
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        sliderMain.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHighlited = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        sliderMain.setThumbImage(thumbImageHighlited, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+        sliderMain.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+        sliderMain.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
 
 
